@@ -1,0 +1,43 @@
+
+/* ================= INTRO ================= */
+#intro{
+  position:fixed;
+  inset:0;
+  background:#00343d;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+#glow{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(
+    to top,
+    rgba(255,200,120,0.35),
+    rgba(255,160,60,0.15),
+    rgba(255,255,255,0)
+  );
+  opacity:0;
+  filter:blur(30px);
+}
+
+#logo{
+  position:relative;
+  width:500px;
+  height:300px;
+  z-index:2;
+}
+
+#logo img{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#triLeft{top:0;width:250px}
+#triRight{top:0;width:250px;transform:translateX(-50%) scaleX(-1)}
+#boxLeft{top:170px;width:220px}
+#boxRight{top:170px;width:220px}

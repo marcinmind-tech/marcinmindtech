@@ -1,0 +1,94 @@
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#fff;
+  color:#111;
+  overflow:hidden; /* released after intro */
+}
+
+.page-wrapper{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* ================= HEADER ================= */
+header{
+  background:#00343d;
+  padding:18px 40px;
+}
+
+header img{
+  height:42px;
+}
+.logo{
+  width:7%;
+  height:5%;
+  padding-left: 30px;
+}
+
+/* ================= CONTENT ================= */
+main{
+  flex:1;
+  padding:80px 40px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.card{
+  border:1px solid rgba(0,52,61,0.35);
+  box-shadow:0 0 25px rgba(0,52,61,0.35);
+  border-radius:20px;
+  padding:40px;
+  margin-bottom:60px;
+}
+
+.booking{
+  display:flex;
+  gap:60px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+/* ================= FORM ================= */
+.form-box{
+  background:#00343d;
+  color:white;
+  padding:40px;
+  border-radius:20px;
+  max-width:520px;
+}
+
+.form-box input{
+  width:100%;
+  padding:14px;
+  margin-bottom:16px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.form-box button{
+  width:100%;
+  padding:15px;
+  background:white;
+  color:#00343d;
+  font-size:18px;
+  font-weight:bold;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#00343d;
+  color:white;
+  padding:22px;
+  text-align:center;
+}
