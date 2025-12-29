@@ -1,18 +1,52 @@
-/* ================= WHATSAPP FORM ================= */
-document.getElementById("bookingForm").addEventListener("submit", function(e){
+document.getElementById("callbackForm").addEventListener("submit", function(e){
   e.preventDefault();
 
-  const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
-  const service = document.getElementById("service").value;
+  const name = document.getElementById("cbName").value.trim();
+  const phone = document.getElementById("cbPhone").value.trim();
+  const service = document.getElementById("cbService").value;
 
-  const msg = `Hello,
-Name: ${name}
-Phone: ${phone}
-Service Needed: ${service}`;
+  // Validation
+  const nameRegex = /^[A-Za-z\s]+$/;
+  const phoneRegex = /^[0-9]{10}$/;
 
-  window.open(
-    "https://wa.me/9150769598?text=" + encodeURIComponent(msg),
-    "_blank"
-  );
+  if (!nameRegex.test(name)) {
+    alert("Name should contain only letters and spaces");
+    return;
+  }
+
+  if (!phoneRegex.test(phone)) {
+    alert("Phone number must be exactly 10 digits");
+    return;
+  }
+
+  if (!service) {
+    alert("Please select a service");
+    return;
+  }
+
+  fetch("https://script.google.com/macros/s/AKfycbzFItfa_t1ugwANfw9u3cJev8z_j78i4HE15CqOhWXqK_yzG6mREkr4L4kuWUmZPLnEJQ/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body:
+      "name=" + encodeURIComponent(name) +
+      "&phone=" + encodeURIComponent(phone) +
+      "&service=" + encodeURIComponent(service) +
+      "&page=" + encodeURIComponent(window.location.href)
+  });
+
+  .then(res => res.json())
+  .then(data => {
+    if (data.status === "success") {
+      alert("Thank you! We will contact you shortly.");
+      document.getElementById("callbackForm").reset();
+    } else {
+      alert("Submission failed. Please try again.");
+    }
+  })
+  .catch(() => {
+    alert("Network error. Please try again.");
+  });
 });
