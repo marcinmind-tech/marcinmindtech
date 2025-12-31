@@ -50,3 +50,22 @@ document.getElementById("callbackForm").addEventListener("submit", function(e){
     alert("Network error. Please try again.");
   });
 });
+
+
+// Scroll
+document.querySelectorAll('.reveal').forEach(el => {
+el.classList.add('hidden');
+});
+
+function revealOnScroll() {
+document.querySelectorAll('.reveal').forEach(el => {
+  const top = el.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  if (top < windowHeight - 100) {
+    el.classList.remove('hidden');
+  }
+});
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);

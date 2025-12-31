@@ -261,16 +261,16 @@ p{
 }
 
 /* ================= REVEAL ================= */
-.reveal{
-  opacity:0;
-  transform:translateY(32px);
-  transition:all .7s cubic-bezier(0.4, 0, 0.2, 1);
+.reveal {
+  opacity: 1;                /* visible by default */
+  transform: translateY(0);
 }
 
-.reveal.active{
-  opacity:1;
-  transform:none;
+.reveal.hidden {
+  opacity: 0;
+  transform: translateY(40px);
 }
+
 
 /* ================= FLOATING ACTION BAR ================= */
 #actionBar{
