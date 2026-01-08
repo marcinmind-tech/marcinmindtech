@@ -228,6 +228,18 @@ p{
   color:var(--white);
 }
 
+
+.service-text-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.service-text-link:hover h5 {
+  text-decoration: underline;
+}
+
+
 /* ================= WHY US ================= */
 .why-section ul{
   list-style:none;
@@ -416,4 +428,27 @@ footer{
   text-align:center;
   font-size:15px;
   border-top:1px solid var(--dark-grey);
+}
+
+
+
+/* seo pages */
+/* Compact FAQ spacing */
+.compact-faq .accordion-item {
+  margin-bottom: 8px;
+}
+
+.compact-faq .accordion-button {
+  padding: 10px 14px;
+  font-size: 15px;
+}
+
+.compact-faq .accordion-body {
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section h2 {
+  margin-bottom: 25px;
 }
