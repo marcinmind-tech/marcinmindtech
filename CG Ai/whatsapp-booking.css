@@ -574,3 +574,98 @@ body{
   background:#25d366 !important;
   color:#fff !important;
 }
+/* REAL WHATSAPP VERTICAL CHAT MODE */
+#screen{
+  display:flex !important;
+  flex-direction:column !important;
+  gap:8px !important;
+}
+
+.chat-row{
+  width:100% !important;
+  display:flex !important;
+  animation:slideUp .22s ease both !important;
+}
+
+.bot-row{
+  justify-content:flex-start !important;
+}
+
+.user-row{
+  justify-content:flex-end !important;
+}
+
+.chat-bubble{
+  max-width:92% !important;
+  padding:10px 11px !important;
+  border-radius:14px !important;
+  font-size:12.5px !important;
+  line-height:1.45 !important;
+  box-shadow:0 3px 10px rgba(0,0,0,.08) !important;
+}
+
+.bot-bubble{
+  background:#fff !important;
+  border-bottom-left-radius:3px !important;
+}
+
+.user-bubble{
+  background:#dcf8c6 !important;
+  color:#111827 !important;
+  border-bottom-right-radius:3px !important;
+  font-weight:500 !important;
+}
+
+.bot-bubble h2{
+  font-size:15px !important;
+  color:#075e54 !important;
+  margin-bottom:3px !important;
+}
+
+.bot-bubble p{
+  font-size:12px !important;
+  color:#334155 !important;
+  margin-bottom:8px !important;
+  font-weight:500 !important;
+}
+
+.completed-bot{
+  opacity:.72 !important;
+}
+
+.completed-bot input,
+.completed-bot button,
+.completed-bot .vehicle-card{
+  pointer-events:none !important;
+}
+
+.chat-send-btn{
+  width:100% !important;
+  min-height:38px !important;
+  border:0 !important;
+  border-radius:999px !important;
+  background:#25d366 !important;
+  color:#fff !important;
+  font-size:12.5px !important;
+  font-weight:700 !important;
+  cursor:pointer !important;
+  margin-top:8px !important;
+  box-shadow:0 5px 14px rgba(37,211,102,.28) !important;
+}
+
+.whatsapp-final{
+  font-size:13.5px !important;
+  min-height:42px !important;
+}
+
+.nav-actions{
+  display:none !important;
+}
+
+.cg-body{
+  padding-bottom:14px !important;
+}
+
+.ai-bubble{
+  display:none !important;
+}
