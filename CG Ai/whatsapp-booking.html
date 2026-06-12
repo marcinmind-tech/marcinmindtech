@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Covai Glide AI Booking</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="whatsapp-booking.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <main class="cg-page">
+    <section class="cg-app">
+      <header class="cg-header">
+        <div class="cg-brand">
+          <img src="images/logo.png" alt="Covai Glide">
+          <div>
+            <h1>Covai Glide AI</h1>
+            <p><span></span> Smart Trip Booking</p>
+          </div>
+        </div>
+        <button class="reset-btn" onclick="resetBooking()" aria-label="Reset">
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </header>
+
+      <section class="cg-body">
+        <img src="images/logo.png" class="watermark" alt="">
+        <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+        <div id="screen"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="whatsapp-booking.js"></script>
+</body>
+</html>
