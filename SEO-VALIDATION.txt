@@ -1,0 +1,3 @@
+# SEO build validation
+
+PASS — 14 HTML pages checked; JSON-LD parsed; titles, descriptions, canonicals, H1s, social links and internal links checked.

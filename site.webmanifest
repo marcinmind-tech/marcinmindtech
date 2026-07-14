@@ -1,0 +1,15 @@
+{
+  "name": "Marc in Mind Technologies",
+  "short_name": "Marc in Mind",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "sizes": "1000x1000",
+      "type": "image/png"
+    }
+  ]
+}
