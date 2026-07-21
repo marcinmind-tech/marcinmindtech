@@ -30,7 +30,7 @@ FAQ markup is retained as machine-readable structured data and is matched to vis
 2. Submit `sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 3. Inspect the homepage and all service URLs in Search Console.
 4. Validate JSON-LD with Schema Markup Validator and Google's Rich Results Test where supported.
-5. Confirm the Google Business Profile NAP exactly matches: 4/224 A, KS Garden, Sengathurai, Sulur, Coimbatore, Tamil Nadu 641401.
+5. Confirm the Google Business Profile NAP exactly matches: 4/224 B, KS Garden, Sengathurai, Sulur, Coimbatore, Tamil Nadu 641401.
 6. Add the exact Facebook profile URL later to the footer and LocalBusiness `sameAs` array.
 7. Connect GA4 and Google Search Console; review queries after 28–60 days.
 8. Replace placeholder client logos with approved compressed PNG/WebP assets and accurate alt text.
