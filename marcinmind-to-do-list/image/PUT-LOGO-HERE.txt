@@ -1,0 +1,6 @@
+Place your actual Marc in Mind Technologies logo here and name it exactly:
+
+logo.png
+
+Final path:
+marcinmind.in/to-do-list/image/logo.png
